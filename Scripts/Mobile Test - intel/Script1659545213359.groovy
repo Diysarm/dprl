@@ -17,33 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('Saucedemo.com')
+Mobile.startApplication('bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c', true)
 
-WebUI.maximizeWindow()
+Mobile.tap(findTestObject('Object Repository/Mobile testing(Remote)/android.widget.TextView - Search Wikipedia'), 0)
 
-WebUI.setText(findTestObject('SauceDemo_Object/Page_Swag Labs/username'), 'standard_user')
+Mobile.setText(findTestObject('Object Repository/Mobile testing(Remote)/android.widget.AutoCompleteTextView - Search (1)'), 
+    'katalon', 0)
 
-WebUI.setEncryptedText(findTestObject('SauceDemo_Object/Page_Swag Labs/password'), 'qcu24s4901FyWDTwXGr6XA==')
+Mobile.tap(findTestObject('Object Repository/Mobile testing(Remote)/android.widget.TextView - Katalon Studio'), 0)
 
-WebUI.click(findTestObject('SauceDemo_Object/Page_Swag Labs/login_btn'))
+Mobile.tap(findTestObject('Object Repository/Mobile testing(Remote)/android.widget.TextView - GO BACK'), 0)
 
-WebUI.click(findTestObject('Object Repository/SauceDemo_Object/Produk/button_Add to cart_sauce lab backpack'))
+Mobile.tap(findTestObject('Object Repository/Mobile testing(Remote)/android.widget.TextView - Search Wikipedia'), 0)
 
-WebUI.click(findTestObject('Object Repository/SauceDemo_Object/Produk/button_Add to cart_ sauce lab bike light'))
+Mobile.setText(findTestObject('Mobile testing(Remote)/android.widget.AutoCompleteTextView - Search (1)'), 'intel', 0)
 
-WebUI.click(findTestObject('SauceDemo_Object/Produk/shopping_cart'))
+Mobile.scrollToText('Intel Core')
 
-WebUI.click(findTestObject('SauceDemo_Object/Cart/button_Checkout'))
+Mobile.getText(findTestObject('Object Repository/Mobile testing(Remote)/android.widget.TextView - Intel Core'), 0)
 
-WebUI.setText(findTestObject('SauceDemo_Object/Cekot_information/input_Checkout Your Information_firstName'), 'anajai')
+Mobile.pressBack()
 
-WebUI.setText(findTestObject('SauceDemo_Object/Cekot_information/input_Checkout Your Information_lastName'), 'ase')
+Mobile.pressBack()
 
-WebUI.setText(findTestObject('SauceDemo_Object/Cekot_information/input_Checkout Your Information_postalCode'), '123332')
+Mobile.pressBack()
 
-WebUI.click(findTestObject('SauceDemo_Object/Cekot_information/Continue_btn_cekotinformation'))
-
-WebUI.click(findTestObject('SauceDemo_Object/cekot overview/button_Finish'))
-
-WebUI.closeBrowser()
+Mobile.closeApplication()
 

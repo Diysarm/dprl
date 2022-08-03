@@ -6,7 +6,7 @@
    <UUID>e98d82ec-d14e-43f2-ab3d-0cecf58de0ca</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\7789719\Katalon Studio\DPRL Automation\DPRL Automation.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\muhra\git\dprl\DPRL Automation.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -25,5 +25,6 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
+   <timeStampInProperties>true</timeStampInProperties>
    <type>WEBUI</type>
 </Project>
